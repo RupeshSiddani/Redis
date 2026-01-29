@@ -32,7 +32,7 @@ The leader packages client commands into log entries and floods them to follower
 ---
 
 ## 2. Source Walkthrough
-The Raft code lives in [`cider/raft`](./raft/).  Each file matches one concept in the protocol.
+The Raft code lives in [`redis/raft`](./raft/).  Each file matches one concept in the protocol.
 
 | File           | What it holds                                                                            |
 | -------------- | ---------------------------------------------------------------------------------------- |
@@ -40,7 +40,7 @@ The Raft code lives in [`cider/raft`](./raft/).  Each file matches one concept i
 | `rpc.go`       | RPC argument / reply structs and server methods (`RequestVote`, `AppendEntries`)         |
 | `node.go`      | The control logic: time-outs, elections, heart-beats, and log replication                |
 
-Below is a step-by-step map from the Raft paper to the Cider code.
+Below is a step-by-step map from the Raft paper to the redis code.
 
 ### 2.1 Starting a Node – `NewRaftNode`
 ```go
