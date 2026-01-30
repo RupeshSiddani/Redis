@@ -7,7 +7,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/nemaniabhiram/cider/store"
+	"github.com/RupeshSiddani/redis/store"
 )
 
 type Server struct {

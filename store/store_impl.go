@@ -1,6 +1,6 @@
 package store
 
-import "github.com/nemaniabhiram/cider/cache"
+import "github.com/RupeshSiddani/redis/cache"
 
 type Store struct {
 	Username string
